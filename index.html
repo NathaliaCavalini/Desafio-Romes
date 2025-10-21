@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Memória - Ratanabá</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- TELA INICIAL -->
+  <div id="tela-inicial">
+    <h1>Escape de Ratanabá 🐒</h1>
+    <p>Digite seu nome para começar:</p>
+    <input type="text" id="nickname" placeholder="Seu nome...">
+    <button onclick="iniciarJogo()">Começar</button>
+  </div>
+
+  <!-- TELA DO JOGO -->
+  <div id="tela-jogo" class="escondido">
+    <h2 id="boas-vindas"></h2>
+    <p>Fase: <span id="fase-atual">1</span> | Pontos: <span id="pontuacao">0</span></p>
+    <div id="tabuleiro"></div>
+  </div>
+
+  <!-- TELA FINAL -->
+  <div id="tela-final" class="escondido">
+    <h2>Fim de Jogo</h2>
+    <p id="mensagem-final"></p>
+    <p>Pontuação Final: <span id="pontuacao-final"></span></p>
+    <button onclick="reiniciar()">Jogar Novamente</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

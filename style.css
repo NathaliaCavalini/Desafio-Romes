@@ -1,0 +1,55 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #C0D904;
+  color: #025951;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.escondido {
+  display: none;
+}
+
+#tabuleiro {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  background-color: #468BA6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.card.revelada {
+  background-color: #93A603;
+  font-size: 32px;
+}
+
+input, button {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #667302;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #025951;
+}
